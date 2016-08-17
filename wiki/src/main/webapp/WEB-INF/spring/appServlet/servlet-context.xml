@@ -27,7 +27,7 @@
 		<interceptor>	   	   
 	       <mapping path="/del/*.do"/>
 	       <mapping path="/hstr/*.do"/>
-	       <mapping path="/concrc/*.do"/>
+	       <mapping path="/ccrc/*.do"/>
 	       <beans:bean class="com.ibm.wiki.interceptor.interceptor"/>	        
 	    </interceptor>
 	</interceptors>
