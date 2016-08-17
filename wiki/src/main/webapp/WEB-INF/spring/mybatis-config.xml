@@ -12,6 +12,7 @@
 		<typeAlias alias="WikiMemVO" type="com.ibm.wiki.common.member.vo.WikiMemVO" />
 		<typeAlias alias="WikiLstVO" type="com.ibm.wiki.main.vo.WikiLstVO" />
 	    <typeAlias alias="WikiLogVO" type="com.ibm.wiki.log.vo.WikiLogVO" />
+	    <typeAlias alias="WikiItemVO" type="com.ibm.wiki.item.vo.WikiItemVO" />
 	</typeAliases>
     <!-- sql 맵퍼 -->
 

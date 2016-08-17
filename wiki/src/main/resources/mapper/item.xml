@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="item">
+	
+	<select id="insertItem" resultType="WikiItemVO">
+		<![CDATA[
+			INSERT INTO
+				TB_WIKI_ITEM
+			VALUES
+			(
+				ITEM_ID_NUM.NEXTVAL,
+				#{ITEM_TITLE},
+				#{ITEM_CONTENT},
+				#{ITEM_IMG},
+				#{REG_NM},
+				#{REG_DT},
+				#{MOD_NM},
+				#{MOD_DT},
+				#{IS_DEL},
+				#{ITEM_HIT}
+			)
+		]]>
+	</select>
+</mapper>

@@ -23,11 +23,18 @@
 	
 	<context:component-scan base-package="com.ibm.wiki" />
 	
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+  		<beans:property name="maxUploadSize" value="100000" />
+<!--   		<beans:property name="uploadTempDir" ref="uploadDirResource" /> -->
+  		<beans:property name="defaultEncoding" value="UTF-8"/>
+	</beans:bean>
+	
  	<interceptors>
 		<interceptor>	   	   
 	       <mapping path="/del/*.do"/>
 	       <mapping path="/hstr/*.do"/>
 	       <mapping path="/ccrc/*.do"/>
+	       <mapping path="/item/rgst.do"/>
 	       <beans:bean class="com.ibm.wiki.interceptor.interceptor"/>	        
 	    </interceptor>
 	</interceptors>

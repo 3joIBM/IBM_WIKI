@@ -7,20 +7,12 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="subject" content="감어인 DAMS" />
-<meta name="author" content="김현민" />
-<meta name="description" content="감어인 DAMS" />
-<meta name="keywords" content="감어인 DAMS" />
-<title>감어인 DAMS</title>
 <link rel="stylesheet" type="text/css" href="/css/bird/style.css" />
 <link rel="stylesheet" type="text/css" href="/jscript/capsdetector/jquery.capsalerttipsy.css" />
 
 
 <script type="text/javascript" src="/jscript/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="/jscript/jquery.url.js"></script>
-
-<script type="text/javascript" src="/jscript/capsdetector/jquery.jccapsalert.js"></script>
-<script type="text/javascript" src="/jscript/capsdetector/jquery.tipsy.js"></script>
 
 <script type="text/javascript">
 $(function(){

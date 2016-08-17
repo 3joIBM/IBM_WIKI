@@ -96,7 +96,7 @@ public class WIkiLogController {
 	}
 	
 	@RequestMapping(value = "/log/Join.do", method = RequestMethod.GET)
-	public ModelAndView joinToJsp(Locale locale, Model model) {	
+	public ModelAndView joinView(Locale locale, Model model) {	
 		logger.info("Move to Join View");
 	
 		ModelAndView mv = new ModelAndView("/log/WikiJoin");
