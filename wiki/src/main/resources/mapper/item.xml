@@ -17,6 +17,7 @@
 				#{REG_DT},
 				#{MOD_NM},
 				#{MOD_DT},
+				#{MOD_CNT},
 				#{IS_DEL},
 				#{ITEM_HIT}
 			)

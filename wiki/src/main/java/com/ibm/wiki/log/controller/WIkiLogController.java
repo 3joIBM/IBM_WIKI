@@ -30,8 +30,8 @@ public class WIkiLogController {
 	private WikiLogService wikiLogService;
 	
 	@RequestMapping(value = "/log/Login.do", method = RequestMethod.GET)
-	public String login(Locale locale, Model model) {
-		logger.info("User Login Process");
+	public String loginView(Locale locale, Model model) {
+		logger.info("User Login View");
 		
 		//List<WikiLstVO>() wikiLst = wikiLstService.selectBoardList();
 		int totUsrCnt = 0;

@@ -3,6 +3,8 @@ package com.ibm.wiki.item.rgst.controller;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Locale;
 
 import javax.annotation.Resource;
@@ -40,10 +42,14 @@ public class WIkiRgstController {
 		
 		logger.info("Item Regist Process Start");
 		
+		Calendar calendar = Calendar.getInstance();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+		
 		String uploadDir = "D:" + File.separator + "Upload";
 		String fileNM = StrUtil.gfEraseExt(pItemAtch.getOriginalFilename());
 		String fileExt = StrUtil.gfGetExt(pItemAtch.getOriginalFilename());
-		String saveFileNM = uploadDir + File.separator + fileNM + "_" + new Timestamp(System.currentTimeMillis()) + "." + fileExt;
+		
+		String saveFileNM = uploadDir + File.separator + fileNM + "_" + dateFormat.format(calendar.getTime()) + "." + fileExt;
 		
 		if(!pItemAtch.isEmpty()){
 			File file = new File(saveFileNM);
@@ -66,6 +72,7 @@ public class WIkiRgstController {
 		wikiItemVO.setREG_NM(request.getSession().getAttribute("pUsrID").toString());
 		wikiItemVO.setMOD_DT("");
 		wikiItemVO.setMOD_NM("");
+		wikiItemVO.setMOD_CNT(0);
 		
 		try {
 			wikiRgstService.insertItem(wikiItemVO);

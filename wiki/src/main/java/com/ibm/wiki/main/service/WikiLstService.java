@@ -1,11 +1,10 @@
 package com.ibm.wiki.main.service;
 
 import java.util.List;
-import java.util.Map;
 
-import com.ibm.wiki.main.vo.WikiLstVO;
+import com.ibm.wiki.item.vo.WikiItemVO;
 
 public interface WikiLstService {
 
-	List<WikiLstVO> selectBoardList() throws Exception;
+	List<WikiItemVO> selectItemList() throws Exception;
 }

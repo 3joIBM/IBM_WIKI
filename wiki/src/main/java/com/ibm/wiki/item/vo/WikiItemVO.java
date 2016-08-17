@@ -14,6 +14,7 @@ public class WikiItemVO{
 	private String REG_DT = "";
 	private String MOD_NM = "";
 	private String MOD_DT = "";
+	private int MOD_CNT = 0;
 	private int IS_DEL = 0;
 	private long ITEM_HIT = 0;
 
@@ -76,5 +77,11 @@ public class WikiItemVO{
 	}
 	public void setITEM_HIT(long iTEM_HIT) {
 		ITEM_HIT = iTEM_HIT;
+	}
+	public int getMOD_CNT() {
+		return MOD_CNT;
+	}
+	public void setMOD_CNT(int mOD_CNT) {
+		MOD_CNT = mOD_CNT;
 	}
 }

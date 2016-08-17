@@ -42,21 +42,19 @@
 	<tr>	
 		<td rowspan="16"><input type="text"></input><input type="button" value="검색"/></td>
 	</tr>
-	<tr><td> 작성자 </td><td width="200px"> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>
-	<tr><td> 작성자 </td><td> 제목 </td><td>08.11.2016</td></tr>	
+	<tr><td colspan="3" align="right">총  ${itemLstCnt}개</td></tr>
+	<c:choose>
+	<c:when test="${fn:length(itemLst) > 0}">
+		<c:forEach var="item" items="${itemLst}">
+			<tr><td> ${item.REG_NM} </td><td width="200px"> ${item.ITEM_TITLE} </td><td> ${item.REG_DT} </td></tr>
+		</c:forEach>
+	</c:when>
+	<c:otherwise>
+		<tr>
+			<td colspan="4">조회된 결과가 없습니다.</td>
+		</tr>
+	</c:otherwise>
+	</c:choose>
 	<tr><td colspan="4" align="right"><input type="button" value="등록" onclick="javascript:jsSendRgst();"/></td></tr>
 </table>
 </form>

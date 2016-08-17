@@ -24,7 +24,7 @@
 	<context:component-scan base-package="com.ibm.wiki" />
 	
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-  		<beans:property name="maxUploadSize" value="100000" />
+  		<beans:property name="maxUploadSize" value="10000000" />
 <!--   		<beans:property name="uploadTempDir" ref="uploadDirResource" /> -->
   		<beans:property name="defaultEncoding" value="UTF-8"/>
 	</beans:bean>

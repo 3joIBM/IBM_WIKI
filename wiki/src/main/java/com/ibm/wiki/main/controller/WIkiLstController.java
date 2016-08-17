@@ -1,6 +1,7 @@
 package com.ibm.wiki.main.controller;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -13,10 +14,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.ibm.wiki.item.vo.WikiItemVO;
 import com.ibm.wiki.main.service.WikiLstService;
-import com.ibm.wiki.main.vo.WikiLstVO;
-
 
 @Controller
 public class WIkiLstController {
@@ -27,19 +28,31 @@ public class WIkiLstController {
 	private WikiLstService wikiLstService;
 	
 	@RequestMapping(value = "/main", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+	public ModelAndView home(Locale locale, Model model) {
+		logger.info("Main Frame");
 		
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);		
 		
-		//List<WikiLstVO>() wikiLst = wikiLstService.selectBoardList();
+		List<WikiItemVO> itemLst = null;
+		
+		try {
+			itemLst = wikiLstService.selectItemList();
+		} catch (Exception e) {			
+			e.printStackTrace();
+		}
 		
 		String formattedDate = dateFormat.format(date);
+		//model.addAttribute("serverTime", formattedDate );
 		
-		model.addAttribute("serverTime", formattedDate );
+		ModelAndView mv = new ModelAndView();
 		
-		return "home";
+		mv.addObject("itemLst", itemLst);
+		mv.addObject("itemLstCnt", itemLst.size());
+		
+		mv.setViewName("/home");
+		
+		return mv;
 	}
 
 }

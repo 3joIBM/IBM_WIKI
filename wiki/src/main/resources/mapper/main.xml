@@ -3,13 +3,13 @@
 
 <mapper namespace="main">
 	
-	<select id="selectBoardList" resultType="WikiLstVO">
+	<select id="selectItemList" resultType="WikiItemVO">
 		<![CDATA[
 			SELECT
 			    *
 			FROM
 			    TB_WIKI_ITEM
-			ORDER BY ID DESC
+			ORDER BY ITEM_ID DESC
 		]]>
 	</select>
 	

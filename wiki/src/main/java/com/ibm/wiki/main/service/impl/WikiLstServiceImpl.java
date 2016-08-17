@@ -7,9 +7,9 @@ import javax.annotation.Resource;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
+import com.ibm.wiki.item.vo.WikiItemVO;
 import com.ibm.wiki.main.dao.WikiLstDAO;
 import com.ibm.wiki.main.service.WikiLstService;
-import com.ibm.wiki.main.vo.WikiLstVO;
 
 @Service("wikiLstService")
 public class WikiLstServiceImpl implements WikiLstService{
@@ -19,7 +19,7 @@ public class WikiLstServiceImpl implements WikiLstService{
 	private WikiLstDAO wikiLstDAO;
 	
 	@Override
-	public List<WikiLstVO> selectBoardList() throws Exception {
-		return wikiLstDAO.selectBoardList();
+	public List<WikiItemVO> selectItemList() throws Exception {
+		return wikiLstDAO.selectItemList();
 	}
 }
