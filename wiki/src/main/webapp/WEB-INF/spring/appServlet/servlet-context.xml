@@ -25,7 +25,7 @@
 	
  	<interceptors>
 		<interceptor>	   	   
-	       <mapping path="/log/*.do"/>
+	       <mapping path="/del/*.do"/>
 	       <beans:bean class="com.ibm.wiki.interceptor.interceptor"/>	        
 	    </interceptor>
 	</interceptors>
