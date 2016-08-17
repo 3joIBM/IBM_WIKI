@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+ 
+    <!-- db 정보 파일을 로드한다. -->
+	<settings>
+	    <setting name="lazyLoadingEnabled" value="false"/>
+	</settings>
+	<!-- vo 클래스에 대한 alias 설정 -->
+	<typeAliases>
+		<typeAlias alias="WikiMemVO" type="com.ibm.wiki.common.member.vo.WikiMemVO" />
+		<typeAlias alias="WikiLstVO" type="com.ibm.wiki.main.vo.WikiLstVO" />
+	    <typeAlias alias="WikiLogVO" type="com.ibm.wiki.log.vo.WikiLogVO" />
+	</typeAliases>
+    <!-- sql 맵퍼 -->
+
+ </configuration>

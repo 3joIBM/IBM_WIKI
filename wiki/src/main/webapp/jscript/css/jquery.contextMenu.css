@@ -1,0 +1,102 @@
+.paper span.dynatree-icon { 
+	background-image: url(/images/tree/frm/page_edit.png);
+	background-position-x:0px;
+	background-position-y:0px; 
+}
+
+.photo span.dynatree-icon { 
+    background-image: url(/images/tree/frm/camera.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.vod span.dynatree-icon { 
+    background-image: url(/images/tree/frm/television.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.book span.dynatree-icon { 
+    background-image: url(/images/tree/frm/book_open.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.news span.dynatree-icon { 
+    background-image: url(/images/tree/frm/newspaper.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.musuem span.dynatree-icon { 
+    background-image: url(/images/tree/frm/trophy.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.prv01 span.dynatree-icon { 
+    background-image: url(/images/tree/prv/01_g.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.prv02 span.dynatree-icon { 
+    background-image: url(/images/tree/prv/02_sg.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.prv03 span.dynatree-icon { 
+    background-image: url(/images/tree/prv/03_s.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.prv04 span.dynatree-icon { 
+    background-image: url(/images/tree/prv/04_ss.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.prv05 span.dynatree-icon { 
+    background-image: url(/images/tree/prv/05_f.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.level01 span.dynatree-icon { 
+    background-image: url(/images/tree/cmn/01.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.level02 span.dynatree-icon { 
+    background-image: url(/images/tree/cmn/02.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.level03 span.dynatree-icon { 
+    background-image: url(/images/tree/cmn/03.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.level04 span.dynatree-icon { 
+    background-image: url(/images/tree/cmn/04.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.level05 span.dynatree-icon { 
+    background-image: url(/images/tree/cmn/05.gif);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+
+.rept span.dynatree-icon { 
+    background-image: url(/images/tree/rept/rept.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.box span.dynatree-icon { 
+    background-image: url(/images/tree/rept/box.png);
+    background-position-x:0px;
+    background-position-y:0px; 
+}

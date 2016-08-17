@@ -1,0 +1,9 @@
+.highslide-wrapper, .highslide-outline {
+    background: transparent !important;
+}
+.highslide-image {
+    border: 2px solid #5a5a5a !important;
+}
+.highslide-close a {
+    display: none !important;
+}
