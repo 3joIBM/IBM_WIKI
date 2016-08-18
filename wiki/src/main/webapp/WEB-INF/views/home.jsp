@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Wiki</title>
+	<title>WIKI MAIN</title>
 	<script src="/jscript/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 	
